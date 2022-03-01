@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A simple and modern webpage to showcase developer portfolio  ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://tonybavalan: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@github.com/tonybavalan/portfolio.git"
+  },
+  "keywords": [
+    "dev-portfolio",
+    "portfolio",
+    "WWW",
+    "HTML/CSS/JS"
+  ],
+  "author": "Tony Bavalan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonybavalan/portfolio/issues"
+  },
+  "homepage": "https://github.com/tonybavalan/portfolio#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
