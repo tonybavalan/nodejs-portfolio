@@ -21,19 +21,19 @@ for (var i=0; themeDots.length > i; i++){
 function setTheme(mode){
 
     if(mode == 'light'){
-        document.getElementById('theme-style').href = 'styles/default.css';
+        document.getElementById('theme-style').href = 'css/default.css';
     }
     if(mode == 'dark'){
-        document.getElementById('theme-style').href = 'styles/dark.css';
+        document.getElementById('theme-style').href = 'css/dark.css';
     }
     if(mode == 'blue'){
-        document.getElementById('theme-style').href = 'styles/blue.css';
+        document.getElementById('theme-style').href = 'css/blue.css';
     }
     if(mode == 'green'){
-        document.getElementById('theme-style').href = 'styles/green.css';
+        document.getElementById('theme-style').href = 'css/green.css';
     }
     if(mode == 'purple'){
-        document.getElementById('theme-style').href = 'styles/purple.css';
+        document.getElementById('theme-style').href = 'css/purple.css';
     }
 
     localStorage.setItem('theme', mode);
