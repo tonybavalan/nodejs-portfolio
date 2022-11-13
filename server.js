@@ -12,14 +12,14 @@ app.use('/img', express.static(__dirname + 'public/img'))
 app.set('views', path.join(__dirname, 'public/views'))
 app.set('view engine', 'ejs');
 
-// Navigation
-app.get('/', (req, res) => {
+// Routes
+app.get('/', (res) => {
   res.render('index')
 })
-app.get('/projects', (req, res) => {
+app.get('/projects', (res) => {
   res.render('frontend-bootcamp')
 })
-app.post('/sendmsg', (req, res) => {
+app.post('/sendmsg', (res) => {
   res.render('frontend-bootcamp')
 })
 app.listen(port, () => {
