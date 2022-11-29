@@ -13,15 +13,17 @@ app.set('views', path.join(__dirname, 'public/views'))
 app.set('view engine', 'ejs');
 
 // Routes
-app.get('/', (res) => {
+app.get('/', (req, res) => {
   res.render('index')
 })
-app.get('/projects', (res) => {
+app.get('/projects', (req, res) => {
   res.render('frontend-bootcamp')
 })
-app.post('/sendmsg', (res) => {
+app.post('/sendmsg', (req, res) => {
   res.render('frontend-bootcamp')
 })
 app.listen(port, () => {
     console.log(`app listening at http://localhost:${port}`)
 })
+
+require('./database.js').main();
