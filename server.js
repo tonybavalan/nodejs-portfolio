@@ -2,6 +2,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
+const main = require('./database')
 const port = 8080
 
 // Static Files
@@ -22,8 +23,11 @@ app.get('/projects', (req, res) => {
 app.post('/sendmsg', (req, res) => {
   res.render('frontend-bootcamp')
 })
-app.listen(port, () => {
-    console.log(`app listening at http://localhost:${port}`)
+app.listen(port, async () => {
+  console.log(`app listening at http://localhost:${port}`)
+  try {
+    await main();
+  } catch(err) {
+    console.log(err)
+  }
 })
-
-require('./database.js').main();
